@@ -38,3 +38,20 @@
         }
         let wifeInstance = new wife();
         console.log(wifeInstance.getName());
+
+
+
+/* Object blueprint by class*/
+        class user{
+            first_name = "sadia"
+            last_name = "Afroj"
+            age = 6
+            city = "Madaripur"
+            isBangladeshi = true
+            getName(){
+                return `Nephew Name is ${this.first_name} ${this.last_name}`
+            }
+        }
+
+        let userObj1 = new user()
+        console.log(userObj1.getName())
