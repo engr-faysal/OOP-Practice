@@ -55,3 +55,16 @@
 
         let userObj1 = new user()
         console.log(userObj1.getName())
+
+
+
+/* Object Constructor with parameter and argument*/
+        class add{
+            constructor(num1,num2){
+                console.log("\n This is a constructor Method, Works Automatically without calling, taking Parameter and can't return")
+                let sum =num1+num2;
+                console.log(sum)
+            }
+        }
+
+        let addObj = new add(50,30)
