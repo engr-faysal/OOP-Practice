@@ -22,3 +22,19 @@
             return `Daughter's Name ${daughter.first_name} ${daughter.last_name}`
         }
         console.log(daughter.getName())
+
+
+/* Object Constructor*/
+        function wife(){
+            this.first_name="Rabeya",
+            this.last_name="Akter",
+            this.age=21,
+            this.city="Dhaka",
+            this.isFaridpuira=true
+
+            this.getName= ()=>{
+                return `Wife's Name ${this.first_name} ${this.last_name}`
+            }
+        }
+        let wifeInstance = new wife();
+        console.log(wifeInstance.getName());
