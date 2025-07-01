@@ -68,3 +68,23 @@
         }
 
         let addObj = new add(50,30)
+
+
+
+/*Change class properties value using constructor*/
+        class sub{
+            num1 = 50;
+            num2 = 30;
+
+            constructor(a,b){
+                this.num1 = a
+                this.num2 = b
+            }
+            subTwoNumber(){
+                return this.num1-this.num2;
+            }
+        }
+
+        let subObj = new sub(100,30);
+        console.log(subObj.subTwoNumber());
+
