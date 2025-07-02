@@ -88,3 +88,21 @@
         let subObj = new sub(100,30);
         console.log(subObj.subTwoNumber());
 
+
+/*Getter and Setter Methods*/
+        class Product{
+
+            set setPrice(value){
+                this.price=value
+            }
+
+            get getPrice(){
+                return this.price
+            }
+        }
+
+        let ProductObj = new Product();
+        ProductObj.setPrice=100
+        console.log("This is value find by getter method")
+        console.log(ProductObj.getPrice)
+
