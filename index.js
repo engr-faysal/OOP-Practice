@@ -252,3 +252,25 @@
         counter.decrement()
 
         console.log('counter vaolue', counter.getCount())
+
+
+/*Encapsulation Using ES6 Classes*/
+        class createCounters{
+            #count = 5;
+
+            increase(){
+                this.#count++;
+            }
+            decrease(){
+                this.#count--;
+            }
+            GetCount(){
+                return this.#count;
+            }
+        }
+        let counters = new createCounters();
+        counters.increase()
+        counters.increase()
+        counters.increase()
+        counters.decrease()
+        console.log('ES6 Counter:',counters.GetCount())
