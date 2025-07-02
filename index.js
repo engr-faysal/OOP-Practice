@@ -207,3 +207,48 @@
         myClassObj.myMethod(5)
         myClassObj.myMethod(10,15)
         myClassObj.myMethod(20,25,30)
+
+
+
+        /*
+        --------------- Encapsulation -------------
+        1. Grouping Data and Action
+        2. Hide Complexity
+        3. Data protection
+        4. Controlled Access
+        5. Enhances maintainability
+
+        - Encapsulation Using Closures
+        - Using Constructor Functions
+        - Using ES6 Classes
+        */
+
+
+
+/*Encapsulation Using Closures*/
+        function createCounter(){
+            let count = 0;
+
+            return{
+                increment: function(){
+                    count++;
+                },
+                decrement: function(){
+                    count--;
+                },
+                getCount: function(){
+                    return count;
+                }
+            }
+        }
+
+        const counter = createCounter()
+
+        counter.increment()
+        counter.increment()
+        counter.increment()
+        counter.increment()
+        counter.decrement()
+        counter.decrement()
+
+        console.log('counter vaolue', counter.getCount())
