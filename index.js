@@ -185,3 +185,25 @@
 
         let daughtersObJ = new daughters()
         daughtersObJ.addNumbers()
+
+
+
+/*Method overloading*/
+        class myClass{
+
+            myMethod(p1,p2,p3){
+                if(arguments.length==1){
+                    console.log("Recieved One Argument", p1)
+                }
+                else if(arguments.length==2){
+                    console.log("Recieved Two Arguments", p1,p2)
+                }
+                else if(arguments.length==3){
+                    console.log("Recieved Three Arguments", p1,p2,p3)
+                }
+            }
+        }
+        let myClassObj = new myClass()
+        myClassObj.myMethod(5)
+        myClassObj.myMethod(10,15)
+        myClassObj.myMethod(20,25,30)
