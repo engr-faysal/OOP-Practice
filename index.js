@@ -218,9 +218,9 @@
         4. Controlled Access
         5. Enhances maintainability
 
-        - Encapsulation Using Closures
-        - Using Constructor Functions
-        - Using ES6 Classes
+        - Encapsulation Using Closures+
+        - EncapsulationUsing ES6 Classes
+        - EncapsulationUsing Constructor Functions
         */
 
 
@@ -274,3 +274,27 @@
         counters.increase()
         counters.decrease()
         console.log('ES6 Counter:',counters.GetCount())
+
+
+/*EncapsulationUsing Constructor Functions*/
+        function CreateCounterValue(){
+            let count = 10;
+
+            this.increaseValue=()=>{
+                count++;
+            }
+            this.decreaseValue=()=>{
+                count--;
+            }
+            this.countValue=()=>{
+                return count;
+            }
+        }
+        const CounterValue = new CreateCounterValue();
+
+        CounterValue.increaseValue();
+        CounterValue.increaseValue();
+        CounterValue.increaseValue();
+        CounterValue.decreaseValue();
+
+        console.log(CounterValue.countValue())
