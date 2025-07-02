@@ -161,3 +161,27 @@
         }
 
         new son("Constructor of son and print");
+
+
+/*Method overriding*/
+        class father{
+            addNumbers(){
+                let num1 = 20;
+                let num2 = 55;
+                console.log(num1+num2)
+            }
+        }
+
+        class daughters extends father{
+            addNumbers(){
+                let num1 = 220;
+                let num2 = 350;
+                console.log(num1+num2)
+            }
+        }
+
+        let fatherObj = new father()
+        fatherObj.addNumbers()
+
+        let daughtersObJ = new daughters()
+        daughtersObJ.addNumbers()
