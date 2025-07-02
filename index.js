@@ -120,3 +120,28 @@
         console.log(customer.first_name)
         console.log(customer.last_name)
         console.log(customer.getName())
+
+
+/* Inheritance*/
+        class Father{
+            num1 = 10;
+            num2 = 30;
+
+            addNumber(){
+                let sum = this.num1 + this.num2;
+                console.log(sum)
+            }
+        }
+
+        class Daughter extends Father{
+
+        }
+
+        let DaughterObJ = new Daughter()
+        console.log (DaughterObJ.num1)
+        console.log (DaughterObJ.num2)
+        DaughterObJ.addNumber()
+
+        let FatherObj = new Father()
+        console.log(FatherObj.num1)
+        FatherObj.addNumber()
