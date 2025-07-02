@@ -145,3 +145,19 @@
         let FatherObj = new Father()
         console.log(FatherObj.num1)
         FatherObj.addNumber()
+
+
+/*Inheritance with constructor and Parameter*/
+        class Mother{
+
+        }
+
+        class son extends Mother{
+            
+            constructor(msg){
+                super()
+                console.log(msg)
+            }
+        }
+
+        new son("Constructor of son and print");
