@@ -106,3 +106,17 @@
         console.log("This is value find by getter method")
         console.log(ProductObj.getPrice)
 
+
+/*Static keyword used for -Shared Properties - Utility Function - Memory Efficiency - Performance*/
+        class customer{
+            static first_name="MD"
+            static last_name="Rumman"
+
+        static getName(){
+                return `Customer name is ${this.first_name} ${this.last_name}`
+            }
+        }
+
+        console.log(customer.first_name)
+        console.log(customer.last_name)
+        console.log(customer.getName())
