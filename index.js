@@ -251,7 +251,7 @@
         counter.decrement()
         counter.decrement()
 
-        console.log('counter vaolue', counter.getCount())
+        console.log('counter value', counter.getCount())
 
 
 /*Encapsulation Using ES6 Classes*/
@@ -274,6 +274,7 @@
         counters.increase()
         counters.decrease()
         console.log('ES6 Counter:',counters.GetCount())
+
 
 
 /*EncapsulationUsing Constructor Functions*/
